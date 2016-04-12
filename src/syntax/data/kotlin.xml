@@ -37,6 +37,9 @@
             
             <item>typealias</item>
             <item>typeof</item>            
+            <item>override</item>
+            <item>infix</item>
+            <item>operator</item>
         </list>
         <list name="controlFlowKeyword">
             <item>if</item>

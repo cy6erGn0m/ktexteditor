@@ -7,6 +7,7 @@
             <item>package</item>
             <item>import</item>
             
+            <item>sealed</item>
             <item>data</item>
             <item>class</item>
             <item>enum</item>
@@ -18,12 +19,16 @@
             <item>public</item>
             <item>protected</item>
             <item>internal</item>
+            <item>open</item>
+            <item>final</item>
             
             <item>fun</item>
             <item>var</item>
             <item>val</item>
+            <item>constructor</item>
             
             <item>inline</item>
+            <item>reified</item>
             <item>crossinline</item>
             <item>tailrec</item>
             
@@ -31,7 +36,12 @@
             <item>out</item>
             <item>is</item>
             <item>as</item>
+            <item>by</item>
             <item>where</item>
+
+            <item>vararg</item>
+            <item>get</item>
+            <item>set</item>
             
             <item>return</item>
             <item>throw</item>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE language SYSTEM "language.dtd">
 <!-- kotlin language http://kotlinlang.org -->
-<language name="Kotlin" version="1.0" kateversion="5.0" section="Sources" extensions="*.kt;*.kts" license="LGPL" author="Sergey Mashkov (sergey.mashkov@jetbrains.net)" style="cstyle" indenter="cstyle">
+<language name="Kotlin" version="1.0" kateversion="5.0" section="Sources" extensions="*.kt;*.kts" license="LGPL" author="Sergey Mashkov (sergey.mashkov@jetbrains.com)" style="cstyle" indenter="cstyle">
     <highlighting>
         <list name="keywords">
             <item>package</item>
@@ -21,7 +21,9 @@
             <item>internal</item>
             <item>open</item>
             <item>final</item>
-            
+
+            <item>get</item>
+            <item>set</item> 
             <item>fun</item>
             <item>var</item>
             <item>val</item>
@@ -97,7 +99,7 @@
             <context attribute="Normal Text" lineEndContext="#stay" name="Normal">
                 <RegExpr attribute="Keyword" context="Imports" String="\b(package|import)\b"/>
                 <RegExpr attribute="Keyword" context="FunctionDeclaration" String="\bfun\b"/>
-                <RegExpr attribute="Keyword" context="TypeDeclaration" String="\b(data|companion|enum)\s+(object|class|interface)\b"/>
+                <RegExpr attribute="Keyword" context="TypeDeclaration" String="\b(object|class|interface)\b"/>
                 <RegExpr attribute="Keyword" context="VariableDeclaration" String="\b(val|var)\b"/>
                 
                 <keyword attribute="Keyword" context="#stay" String="predeclared"/>
@@ -162,6 +164,7 @@
                 <DetectChar attribute="Symbol" context="#stay" char="." />
                 <DetectChar attribute="Symbol" context="Parameters" char="(" />
                 <DetectChar attribute="Symbol" context="TypeParameters" char="&lt;" />
+                <DetectChar attribute="Symbol" context="TypeName" char=":" />
                 
                 <AnyChar attribute="Symbol" context="#pop" String="{=" lookAhead="true" />
                 
